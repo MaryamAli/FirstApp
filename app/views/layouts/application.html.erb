@@ -54,17 +54,26 @@
 
     <%= yield %>
 
-    <footer class="footer">
-      <div class="container">
-        <ul class="footer-text">
-          <li><%= image_tag("facebook.svg") %></li>
-          <li><%= image_tag("instagram.svg") %></li>
-          <li><%= image_tag("pinterest.svg") %></li>
-          <li><%= image_tag("snapchat.svg") %></li>
-          <li><%= image_tag("twitter.svg") %></li>
-        </ul>         
-        <p class="copyright">&copy; 2016 Maryam</p>
-      </div>      
-    </footer>
+    <div class="main-image">
+      <%= image_tag("cupcake1.svg", class:"img-responsive main-image") %>     
+    </div>
+      
+    <div class="container" id="footer-div">
+      <footer class="footer">
+        <div>
+          <ul class="footer-text">
+            <li><a href="#"><%= image_tag("facebook.svg") %></a></li>
+            <li><a href="#"><%= image_tag("instagram.svg") %></a></li>
+            <li><a href="#"><%= image_tag("pinterest.svg") %></a></li>
+            <li><a href="#"><%= image_tag("snapchat.svg") %></a></li>
+            <li><a href="#"><%= image_tag("twitter.svg") %></a></li>
+          </ul> 
+        </div>
+        <div>
+          <p class="copyright">&copy; 2016 Maryam</p>
+        </div>               
+      </footer>
+    </div>      
+    
   </body>
 </html>
